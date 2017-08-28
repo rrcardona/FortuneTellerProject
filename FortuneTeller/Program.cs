@@ -10,7 +10,7 @@ namespace FortuneTeller
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("I am Morpheus, the Fortune Teller! What is your first name?");
+            Console.WriteLine("Welcome, I am Ric the Fortune Teller! What is your first name?");
             string firstName = Console.ReadLine();
             Console.WriteLine("And what is your last name?");
             string lastName = Console.ReadLine();
@@ -24,7 +24,7 @@ namespace FortuneTeller
             string colorAnswer = Console.ReadLine().ToLower();
             if (colorAnswer == "help")
             {
-                Console.WriteLine("ROYGBIV colors are \n R is for Red\n O is for Orange\n Y is for Yellow\n G is for Green\n B is for Blue\n I is for Indigo\n V is for Violet. \nFrom the list above, tell me your favorite color.");
+                Console.WriteLine("ROYGBIV colors are \n Red\n Orange\n Yellow\n Green\n Blue\n Indigo\n Violet. \nSo from the list above, tell me your favorite color.");
                 colorAnswer = Console.ReadLine().ToLower();
             }
             int retiringAge = 0;
@@ -56,15 +56,15 @@ namespace FortuneTeller
             string modeOfTransportation = " ";
             if (colorAnswer == "red")
             {
-                modeOfTransportation = "Red Mountain Bike"; 
+                modeOfTransportation = "Mountain Bike"; 
             }
             else if (colorAnswer == "orange")
             {
-                modeOfTransportation = "Orange Train";
+                modeOfTransportation = "Train";
             }
             else if (colorAnswer == "yellow")
             {
-                modeOfTransportation = "Yellow Ice Cream Truck";
+                modeOfTransportation = "Ice Cream Truck";
             }
             else if (colorAnswer == "green")
             {
@@ -95,7 +95,9 @@ namespace FortuneTeller
             {
                 moneyInBank = 5000000;
             }
-            Console.WriteLine(firstName + " " + lastName + " " + "will retire in"+ " " + retiringAge +" "+ "years with" +" " + "$" + moneyInBank + " " + "in the bank" + "," + " a vacation home \nin " + vacationHome + " and will cruise around in a " + modeOfTransportation + "!");
+
+
+            Console.WriteLine("\n"+firstName + " " + lastName + " " + "will retire in"+ " " + retiringAge +" "+ "years with" +" " + "$" + moneyInBank + " " + "in the bank" + "," + " \na vacation home in " + vacationHome + " and a " + modeOfTransportation + "!");
 
 
         
